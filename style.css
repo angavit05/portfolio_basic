@@ -1,0 +1,365 @@
+/* -------------------------
+   RESET DEFAULT BROWSER STYLES
+-------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* -------------------------
+   GLOBAL PAGE STYLES
+-------------------------- */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1f4959; /* Midnight blue - deepest background */
+  color: #ffffff; /* Pure white for readability */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* -------------------------
+   HEADER (TOP BAR)
+-------------------------- */
+header {
+  background: linear-gradient(
+    135deg,
+    #000000 0%,
+    #000000 100%
+  ); /* Charcoal to deep teal */
+  height: 180px;
+  border-radius: 12px;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 100;
+  border-bottom: 2px solid #000000; /* Muted blue-gray accent */
+  box-shadow: 0 4px 20px rgba(1, 20, 37, 0.6);
+}
+
+/* -------------------------
+   NAVBAR CONTAINER
+-------------------------- */
+nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 2.5rem;
+}
+
+/* -------------------------
+   NAV LINKS
+-------------------------- */
+nav a {
+  color: #5c7c89; /* Muted blue-gray */
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+/* -------------------------
+   NAV LIST (MENU ITEMS)
+-------------------------- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.39rem;
+  margin-bottom: 1rem;
+}
+
+/* -------------------------
+   NAV HOVER EFFECT
+-------------------------- */
+nav a:hover {
+  color: #ffffff; /* White on hover */
+  transform: translateY(-2px);
+}
+
+/* -------------------------
+   HERO SECTION (HOME)
+-------------------------- */
+#home {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(
+    135deg,
+    #1f4959 0%,
+    #5c7c89 100%
+  ); /* Deep teal to muted blue */
+  border-radius: 12px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 32px rgba(1, 20, 37, 0.8);
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  box-shadow: 0 8px 32px rgba(1, 20, 37, 0.8);
+}
+
+#home h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff; /* Pure white for impact */
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(1, 20, 37, 0.5);
+}
+
+#home p {
+  font-size: 1.3rem;
+  color: #ffffff; /* White for clarity */
+  max-width: 600px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+/* -------------------------
+   GENERAL SECTION STYLING
+-------------------------- */
+section {
+  margin: 3rem auto;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  scroll-margin-top: 200px;
+}
+
+section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff; /* White headings */
+  border-bottom: 3px solid #5c7c89; /* Muted blue-gray underline */
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ffffff; /* White text */
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+/* -------------------------
+   ABOUT SECTION
+-------------------------- */
+#about {
+  background: linear-gradient(
+    135deg,
+    rgba(36, 36, 36, 0.5) 0%,
+    rgba(31, 73, 89, 0.3) 100%
+  );
+  border-radius: 12px;
+  padding: 3rem;
+  border: 1px solid rgba(92, 124, 137, 0.3);
+  box-shadow: 0 4px 16px rgba(1, 20, 37, 0.5);
+}
+
+/* -------------------------
+   SKILLS SECTION
+-------------------------- */
+#skills {
+  background: linear-gradient(
+    135deg,
+    rgba(31, 73, 89, 0.4) 0%,
+    rgba(92, 124, 137, 0.2) 100%
+  );
+  border-radius: 12px;
+  padding: 3rem;
+}
+
+#skills p {
+  background: rgba(92, 124, 137, 0.25); /* Muted blue-gray tint */
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #5c7c89; /* Muted blue-gray accent */
+  box-shadow: 0 2px 8px rgba(1, 20, 37, 0.4);
+}
+
+/* -------------------------
+   PROJECTS SECTION
+-------------------------- */
+#projects {
+  padding: 3rem 2rem;
+}
+
+.project-card {
+  background: linear-gradient(
+    135deg,
+    #242424 0%,
+    #1f4959 100%
+  ); /* Charcoal to deep teal */
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  border-left: 5px solid #5c7c89; /* Muted blue-gray */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(1, 20, 37, 0.6);
+}
+
+.project-card:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 24px rgba(92, 124, 137, 0.4);
+  border-left-color: #ffffff; /* White on hover */
+  background: linear-gradient(135deg, #1f4959 0%, #5c7c89 100%);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff; /* White titles */
+}
+
+.project-card p {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/* -------------------------
+   CONTACT SECTION
+-------------------------- */
+#contact {
+  background: linear-gradient(
+    135deg,
+    rgba(36, 36, 36, 0.5) 0%,
+    rgba(31, 73, 89, 0.3) 100%
+  );
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid rgba(92, 124, 137, 0.3);
+  box-shadow: 0 4px 16px rgba(1, 20, 37, 0.5);
+  max-width: 500px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.contact-info a {
+  color: #5c7c89; /* Muted blue-gray */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.contact-info a:hover {
+  color: #ffffff; /* White on hover */
+  text-shadow: 0 0 8px rgba(92, 124, 137, 0.6);
+}
+
+/* -------------------------
+   MAIN CONTENT CONTAINER
+-------------------------- */
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    #000000 100%
+  ); /* Charcoal to midnight */
+  border: 3px solid #000000; /* Deep teal border */
+  border-radius: 12px;
+  padding-bottom: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* -------------------------
+   LOGO AREA
+-------------------------- */
+.logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin-left: 1rem;
+}
+
+.logo img {
+  height: 180px;
+  width: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 12px rgba(1, 20, 37, 0.6);
+}
+
+.logo h2 {
+  color: #ffffff; /* Pure white for name */
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 8px rgba(1, 20, 37, 0.8);
+}
+
+/* -------------------------
+   FOOTER
+-------------------------- */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(
+    135deg,
+    #040000 0%,
+    #000000 100%
+  ); /* Charcoal to deep teal */
+  color: #5c7c89; /* Muted blue-gray text */
+  margin-top: 2rem;
+  border-radius: 12px;
+  border-top: 2px solid #5c7c89;
+  box-shadow: 0 -4px 20px rgba(1, 20, 37, 0.6);
+}
+
+/* -------------------------
+   RESPONSIVE DESIGN
+-------------------------- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  header {
+    height: auto;
+    position: relative;
+  }
+
+  #home h1 {
+    font-size: 2.5rem;
+  }
+
+  section h1 {
+    font-size: 2rem;
+  }
+}
